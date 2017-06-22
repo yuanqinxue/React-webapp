@@ -1,4 +1,6 @@
-## React-webapp 项目
+# React-webapp 项目
+
+## 搭建环境
 
 ### React技术栈
 - react react-router4 redux react-redux
@@ -38,3 +40,15 @@ $ npm install express -S
 "start":"webpack-dev-server --port 5000 --open --progress --colors"
 "build":"webpack -p"
 ```
+
+### 创建 webpack.config.js 文件
+
+## 目录结构
+- components 组件 木偶组件
+- containers 页面组件
+    - Home
+        - subpage 智能组件
+        - index.js
+- index.js 用来控制显示哪一个页面
+
+###
