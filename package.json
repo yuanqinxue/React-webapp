@@ -1,0 +1,20 @@
+{
+  "name": "React-webapp",
+  "version": "1.0.0",
+  "description": "- react react-router4 redux react-redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuanqinxue/React-webapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuanqinxue/React-webapp/issues"
+  },
+  "homepage": "https://github.com/yuanqinxue/React-webapp#readme"
+}
