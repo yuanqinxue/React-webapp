@@ -20,7 +20,7 @@ $ npm install babel-core babel-loader babel-preset-es2015 babel-preset-stage-0 b
 
 ###
 ```
-$ npm install react redux react-redux react-router-dom -S
+$ npm install react redux react-redux react-router-dom react-dom -S
 ```
 
 ###
@@ -35,6 +35,6 @@ $ npm install express -S
 
 ### package.json script
 ```
-"start":"webpack-dev-server --part 5000 --open --progress --colors"
+"start":"webpack-dev-server --port 5000 --open --progress --colors"
 "build":"webpack -p"
 ```
