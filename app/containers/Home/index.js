@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
-export default class Comp extends Component{
+import HomeHeader from '../../components/HomeHeader/index';
+import Slider from '../../components/Slider/index';
+export default class Home extends Component{
     render(){
         return (
             <div>
-                Home
+                <HomeHeader cityName="北京"/>
+                <Slider/>
             </div>
         )
     }
