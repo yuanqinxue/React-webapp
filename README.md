@@ -51,4 +51,9 @@ $ npm install express -S
         - index.js
 - index.js 用来控制显示哪一个页面
 
+- store 一个页面只能有一个store
+    - action 用户发布动作
+    - reducer 定义规则
+    - action-types action的名字
+
 ###
