@@ -27,7 +27,7 @@ class Login extends Component {
         info.username = username;
         this.props.userActions.update(info);
         if (this.props.match.params.route){
-            this.props.history.push(this.props.match.params.route);
+            this.props.history.push(decodeURIComponent(this.props.match.params.route));
         }else {
             this.props.history.push('/user');
         }

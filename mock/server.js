@@ -1,25 +1,38 @@
 let express = require('express');
-let ad = require('./home/ad');
-let list = require('./home/list');
-let info = require('./detail/info');
-let comment = require('./detail/comment');
-let app =express();
+let bodyParser = require('body-parser');
+let app = express();
 
-app.get('/api/ad',(req,res)=>{
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+
+let ad = require('./home/ad');
+app.get('/api/ad', (req, res) => {
     res.send(ad)
 });
 
-app.get('/api/list/:city/:page',(req,res)=>{
-   res.send(list);
+let list = require('./home/list');
+app.get('/api/list/:city/:page', (req, res) => {
+    res.send(list);
 });
 
-app.get('/api/detail/info/:id',(req,res)=>{
+let info = require('./detail/info');
+app.get('/api/detail/info/:id', (req, res) => {
     console.log(req.param.id);
-   res.send(info);
+    res.send(info);
 });
 
-app.get('/api/detail/comment/:id/:page',(req,res)=>{
+let comment = require('./detail/comment');
+app.get('/api/comment/:id/:page', function (req, res) {
     res.send(comment);
 });
 
-app.listen(3000);
+let orderList = require('./orderlist/orderList');
+app.get('/api/orderlist/:username', function (req, res) {
+    res.send(orderList);
+});
+
+app.post('/api/comment',(req,res)=>{
+    res.send({msg:'ok'});
+});
+
+app.listen(3002);

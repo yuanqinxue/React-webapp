@@ -2,23 +2,25 @@ import React, {Component} from 'react';
 import './index.less'
 import {Link} from 'react-router-dom';
 // 主页头部组件
-export default class HomeHeader extends Component{
-    render(){
+export default class HomeHeader extends Component {
+    render() {
         return (
             <div className="home-header back">
                 <div className="city">
-                    {this.props.cityName}
-                    <i className="iconfont icon-unfold"></i>
+                    <Link to="/city">
+                        {this.props.cityName}
+                        <i className="iconfont icon-unfold"></i>
+                    </Link>
                 </div>
                 <div className="search">
                     <i className="iconfont icon-search"></i>
                     <input type="text"/>
                 </div>
-                <Link to='/login'>
-                    <div className="profile">
+                <div className="profile">
+                    <Link to='/login'>
                         <i className="iconfont icon-people_fill"></i>
-                    </div>
-                </Link>
+                    </Link>
+                </div>
             </div>
         )
     }
