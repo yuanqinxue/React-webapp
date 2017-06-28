@@ -39,12 +39,9 @@ export default class Comment extends Component {
     render() {
         return (
             <div>
-                {
-                    this.state.data.length ? <CommentComponent data={this.state.data}/> : <div>正在加载中...</div>
-                }
-                <LoadMore/>
-                {/*<LoadMore isLoading={this.state.isLoading} loadMore={this.loadMore.bind(this)}
-                          hasMore={this.state.hasMore}/>*/}
+                {this.state.data.length ? <CommentComponent data={this.state.data}/> : <div>正在加载中...</div>}
+                <LoadMore isLoading={this.state.isLoading} loadMore={this.loadMore.bind(this)}
+                          hasMore={this.state.hasMore}/>
             </div>
         )
     }

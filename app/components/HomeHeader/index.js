@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './index.less'
 import {Link} from 'react-router-dom';
+import SearchInput from '../SearchInput/index';
 // 主页头部组件
 export default class HomeHeader extends Component {
     render() {
@@ -14,7 +15,7 @@ export default class HomeHeader extends Component {
                 </div>
                 <div className="search">
                     <i className="iconfont icon-search"></i>
-                    <input type="text"/>
+                    <SearchInput value="" fn={this.toSearch.bind(this)}/>
                 </div>
                 <div className="profile">
                     <Link to='/login'>
@@ -23,5 +24,8 @@ export default class HomeHeader extends Component {
                 </div>
             </div>
         )
+    }
+    toSearch(value){
+        this.props.history.push('/search/all/'+value);
     }
 }

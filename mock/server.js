@@ -17,7 +17,6 @@ app.get('/api/list/:city/:page', (req, res) => {
 
 let info = require('./detail/info');
 app.get('/api/detail/info/:id', (req, res) => {
-    console.log(req.param.id);
     res.send(info);
 });
 

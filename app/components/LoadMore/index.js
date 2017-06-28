@@ -12,7 +12,7 @@ export default class LoadMore extends Component {
                 // 判断按钮距离屏幕顶端的高度 和 屏幕可视窗口的高度
                 let screen = window.screen.height;
                 console.log(this.refs.hasMore);
-                let top = this.refs.hasMore.getBoundingClientRect().top; // 获取当前元素的位置
+                let top = this.refs.hasMore.getBoundingClientRect().top;
                 if (top<screen){
                     this.props.loadMore();
                 }
@@ -35,6 +35,7 @@ export default class LoadMore extends Component {
     }
 
     render() {
+        let hasM = this.refs.hasMore;
         return (
             <div className="has-more">
                 {this.props.hasMove ? <div ref="hasMore" onClick={this.loadMore.bind(this)}>加载更多</div> : <div>我是有底线的</div>}

@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ReactSwipe from 'react-swipe';
 import './index.less';
+import {Link} from 'react-router-dom';
+
 export default class Slider extends Component{
     constructor(peops){
         super(peops);
@@ -18,134 +20,194 @@ export default class Slider extends Component{
                 <ReactSwipe className="carousel" swipeOptions={opts}>
                     <div>
                         <ul>
-                            <li>
+                            <Link to="/search/meishi">
+                                <li>
                                 <i className="iconfont icon-canyin"></i>
                                 <span>美食</span>
                             </li>
-                            <li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
                                 <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
+                                <span>景点</span>
                             </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
                         </ul>
                     </div>
                     <div>
                         <ul>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
                         </ul>
                     </div>
                     <div>
                         <ul>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
-                            <li>
-                                <i className="iconfont icon-canyin"></i>
-                                <span>美食</span>
-                            </li>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/meishi">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>美食</span>
+                                </li>
+                            </Link>
+                            <Link to="/search/jingdian">
+                                <li>
+                                    <i className="iconfont icon-canyin"></i>
+                                    <span>景点</span>
+                                </li>
+                            </Link>
                         </ul>
                     </div>
                 </ReactSwipe>
